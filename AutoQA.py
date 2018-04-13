@@ -135,7 +135,7 @@ def start_browsertest(project_name, url, test_case, mode, method, browserlist, r
         shutil.rmtree(current_folder + '\\Etalon', ignore_errors=True)
         shutil.copytree(folder, current_folder + '\\Etalon')
     if video == 1:
-        os.kill(ffmpeg.exe)
+        os.kill(ffmpeg.pid, signal.SIGKILL)
 
 
 def loadSettings():
