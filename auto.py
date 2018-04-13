@@ -25,7 +25,7 @@ def chresolution(driver, resolution):
 
 # Change browser
 def crossbrowser(url, browser, path_to_driver):
-    browser_attr = "webdriver." + browser + "(" + path_to_driver + ")"
+    browser_attr = "webdriver." + browser + "('" + path_to_driver + "')"
     if browser == "Opera":
         webdriver_service = service.Service(path_to_driver)
         webdriver_service.start()
