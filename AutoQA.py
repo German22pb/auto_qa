@@ -13,6 +13,7 @@ from os.path import join
 from datetime import datetime
 import shutil
 import sys
+import signal
 
 root = Tk()
 root.title("AutoQA")
